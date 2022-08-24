@@ -41,7 +41,7 @@ Then configure the rules you want to use under the rules section.
 
 ## Supported Rules
 
-* Ensure an import declaration to have the specifiers splited into multiple lines. ([`imports-length`])
+* Ensure an import declaration have the specifiers splitted into multiple lines. ([`pretty`])
 
-[`imports-length`]: ./docs/rules/imports-length.md
+[`imports-length`]: ./docs/rules/pretty.md
 
