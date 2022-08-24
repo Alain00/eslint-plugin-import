@@ -9,15 +9,15 @@
 //------------------------------------------------------------------------------
 
 
-import requireIndex from 'requireindex';
+// import requireIndex from 'requireindex';
 
 //------------------------------------------------------------------------------
 // Plugin Definition
 //------------------------------------------------------------------------------
 
-
-// import all rules in lib/rules
-export const rules = requireIndex(__dirname + "/rules");
+export const rules = {
+  'imports-length': require('./rules/imports-length'),
+}
 
 
 
