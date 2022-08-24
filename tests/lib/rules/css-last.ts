@@ -24,6 +24,6 @@ ruleTester.run("css-last", rule, {
       code: "import style from './style.css'\nimport { Input } from '@ui/components'\nimport React from 'react'",
       errors: [{ message: notLastMessage, type: "ImportDeclaration",}],
       output: "\nimport { Input } from '@ui/components'\nimport React from 'react'\nimport style from './style.css'"
-    },
+    }
   ],
 });
