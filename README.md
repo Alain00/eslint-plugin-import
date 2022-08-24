@@ -34,13 +34,14 @@ Then configure the rules you want to use under the rules section.
 ```json
 {
     "rules": {
-        "imports-length/rule-name": 2
+        "imports-length/imports-length": 2
     }
 }
 ```
 
 ## Supported Rules
 
-* Fill in provided rules here
+* Ensure an import declaration to have the specifiers splited into multiple lines. ([`imports-length`])
 
+[`imports-length`]: ./docs/rules/imports-length.md
 

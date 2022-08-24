@@ -1,16 +1,32 @@
 # break import line into multiple lines (imports-length)
 
-Please describe the origin of the rule here.
-
 ## Rule Details
 
-This rule aims to...
+This rule aims to style and organize an import declaration splitting it into multiple lines 
 
 Examples of **incorrect** code for this rule:
 
 ```js
 
-// fill me in
+import React, {
+  tuseMemo,
+  tuseCallback
+} from 'react'
+
+```
+
+```js
+
+import React, {useMemo, useCallback, useEffect} from 'react'
+
+```
+
+
+```js
+
+import React, {useMemo, 
+  useCallback, useEffect
+} from 'react'
 
 ```
 
@@ -18,18 +34,16 @@ Examples of **correct** code for this rule:
 
 ```js
 
-// fill me in
+import { Input } from '@ui/components'
 
 ```
 
-### Options
+```js
 
-If there are any options, describe them here. Otherwise, delete this section.
+import {
+  useMemo,
+  useCallback,
+  useEffect
+} from 'react'
 
-## When Not To Use It
-
-Give a short description of when it would be appropriate to turn off this rule.
-
-## Further Reading
-
-If there are other links that describe the issue this rule addresses, please include them here in a bulleted list.
+```
