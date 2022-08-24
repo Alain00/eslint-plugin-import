@@ -1,9 +1,3 @@
-/**
- * @fileoverview break import line into multiple lines
- * @author Alain
- */
-"use strict";
-
 import { Rule } from 'eslint'
 import { ImportDeclaration, ImportDefaultSpecifier, ImportSpecifier } from 'estree';
 
@@ -11,7 +5,7 @@ export = {
   meta: {
     type: 'problem',
     docs: {
-      description: "break import line into multiple lines",
+      description: "prettify import statements",
       recommended: false,
       url: null,
     },
@@ -83,7 +77,7 @@ export = {
                 if (defaults) defaults += ', '
 
                 const specifiers = importSpecifiers
-                  .sort((a,b) => a.local.name.localeCompare(b.local.name))
+                  // .sort((a,b) => a.local.name.localeCompare(b.local.name))
                   .map(specifier => `\n\t${specifier.local.name.trim()}`).join(',');
 
                 return fixer.replaceText(node, `import ${defaults}{${specifiers}\n} from '${source}'`);
@@ -102,7 +96,7 @@ export = {
                   if (defaults) defaults += ', '
                  
                   const specifiers = importSpecifiers
-                    .sort((a,b) => a.local.name.localeCompare(b.local.name))
+                    // .sort((a,b) => a.local.name.localeCompare(b.local.name))
                     .map(specifier => specifier.local.name.trim()).join(', ');
 
                   return fixer.replaceText(node, `import ${defaults}{ ${specifiers} } from '${source}'`);
