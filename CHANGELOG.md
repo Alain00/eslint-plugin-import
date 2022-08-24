@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0](https://github.com/Alain00/eslint-plugin-import/compare/v1.1.1...v1.2.0) (2022-08-24)
+
+
+### Features
+
+* adding css-last and react-first rules ([38ed6f0](https://github.com/Alain00/eslint-plugin-import/commit/38ed6f0bc1cf9ee071e734bd2e515f3cfb7b1386))
+
 ## [1.1.1](https://github.com/Alain00/eslint-plugin-imports-length/compare/v1.1.0...v1.1.1) (2022-08-24)
 
 
