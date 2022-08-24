@@ -42,6 +42,9 @@ Then configure the rules you want to use under the rules section.
 ## Supported Rules
 
 * Ensure an import declaration have the specifiers splitted into multiple lines. ([`pretty`])
+* Ensure react import to be the first import. ([`react-first`])
+* Ensure css imports to be the last import. ([`css-last`])
 
 [`imports-length`]: ./docs/rules/pretty.md
-
+[`react-first`]: ./docs/rules/react-first.md
+[`css-last`]: ./docs/rules/css-last.md

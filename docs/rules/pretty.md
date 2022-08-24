@@ -1,4 +1,4 @@
-# break import line into multiple lines (imports-length)
+# pretty
 
 ## Rule Details
 
