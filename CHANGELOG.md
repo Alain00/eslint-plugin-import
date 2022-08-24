@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.1](https://github.com/Alain00/eslint-plugin-imports-length/compare/v1.1.0...v1.1.1) (2022-08-24)
+
+
+### Bug Fixes
+
+* fixing imports-length rule ([49174a5](https://github.com/Alain00/eslint-plugin-imports-length/commit/49174a55018e8d068446eff42d252d937f83d0a1))
+
 ## [1.1.0](https://github.com/Alain00/eslint-plugin-imports-length/compare/v1.0.0...v1.1.0) (2022-08-24)
 
 
