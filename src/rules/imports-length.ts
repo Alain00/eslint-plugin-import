@@ -66,7 +66,6 @@ export default {
           }
         }
       }
-      // visitor functions for different types of nodes
     };
   },
 } as Rule.RuleModule;
