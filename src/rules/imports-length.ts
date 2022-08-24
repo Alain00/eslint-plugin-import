@@ -13,14 +13,14 @@ import { Rule } from 'eslint'
 
 export default {
   meta: {
-    type: 'problem', // `problem`, `suggestion`, or `layout`
+    type: 'problem',
     docs: {
       description: "break import line into multiple lines",
       recommended: false,
-      url: null, // URL to the documentation page for this rule
+      url: null,
     },
-    fixable: 'code', // Or `code` or `whitespace`
-    schema: [], // Add a schema if the rule has options
+    fixable: 'code',
+    schema: [],
     messages: {
       importLineLength: "Import line is too long",
     }
