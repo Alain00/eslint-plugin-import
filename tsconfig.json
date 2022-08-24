@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "outDir": "./lib",
+    "esModuleInterop": true,
+    "module": "CommonJS"
+  },
+  "include": [
+    "src/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "lib",
+    "tests"
+  ]
+}
