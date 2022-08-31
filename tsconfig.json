@@ -3,7 +3,7 @@
     "outDir": "./lib",
     "esModuleInterop": true,
     "module": "CommonJS",
-    "target": "ES3",
+    "target": "ES2015",
   },
   "include": [
     "src/**/*.ts"

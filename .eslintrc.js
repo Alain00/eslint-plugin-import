@@ -2,6 +2,7 @@
 
 module.exports = {
   root: true,
+  parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaFeatures: {
       ecmaVersion: 6
