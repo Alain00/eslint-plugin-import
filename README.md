@@ -44,7 +44,11 @@ Then configure the rules you want to use under the rules section.
 * Ensure an import declaration have the specifiers splitted into multiple lines. ([`pretty`])
 * Ensure react import to be the first import. ([`react-first`])
 * Ensure css imports to be the last import. ([`css-last`])
+* Ensure function objects params have properties alphabetically sorted. ([`sort-params`])
+* Ensure interface properties to be alphabetically sorted. ([`sort-interface`])
 
 [`pretty`]: ./docs/rules/pretty.md
 [`react-first`]: ./docs/rules/react-first.md
 [`css-last`]: ./docs/rules/css-last.md
+[`sort-params`]: ./docs/rules/sort-params.md
+[`sort-interface`]: ./docs/rules/sort-interface.md
