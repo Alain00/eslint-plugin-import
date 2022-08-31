@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.0](https://github.com/Alain00/eslint-plugin-import/compare/v1.2.1...v1.3.0) (2022-08-31)
+
+
+### Features
+
+* adding sort-interface and sort-params rules ([d3aba62](https://github.com/Alain00/eslint-plugin-import/commit/d3aba6276d2d8f3e625da301fc8edc0087ee1d84))
+
 ## [1.2.1](https://github.com/Alain00/eslint-plugin-import/compare/v1.2.0...v1.2.1) (2022-08-24)
 
 
