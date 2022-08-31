@@ -1,6 +1,6 @@
 # eslint-plugin-import
 
-break import line into multiple lines
+This plugin intends to keep a clean import declaration and order.
 
 ## Installation
 
