@@ -30,6 +30,9 @@ export = {
     const sourceCode = context.getSourceCode();
 
     const isFunction = (prop: AssignmentProperty) => {
+      const name = getKeyName(prop.key);
+      if (/^on/.test(name)) return true;
+
       if (prop.value.type === 'AssignmentPattern') {
         return prop.value.right.type === 'ArrowFunctionExpression' || 
           prop.value.right.type === 'FunctionExpression'
