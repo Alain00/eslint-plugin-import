@@ -4,6 +4,7 @@ import { RuleTester } from 'eslint'
 const notSortedMessage = rule.meta?.messages?.notSorted;
 
 const ruleTester = new RuleTester({
+  parser: require.resolve('@typescript-eslint/parser'),
   parserOptions: {
     ecmaVersion: 6,
     sourceType: 'module'
@@ -90,5 +91,41 @@ ruleTester.run("sort-params", rule, {
         }
       `
     },
+    {
+      code: `
+        interface FooProps {
+          title: string;
+          zoo: string;
+          onEvent: () => void
+        }
+
+        const Foo = ({ 
+          title,
+          onEvent,
+          zoo
+        }: FooProps) => {
+
+        }
+      `,
+      errors: [
+        { message: notSortedMessage, type: "Property"},
+        { message: notSortedMessage, type: "Property"},
+      ],
+      output: `
+        interface FooProps {
+          title: string;
+          zoo: string;
+          onEvent: () => void
+        }
+
+        const Foo = ({ 
+          title,
+          zoo,
+          onEvent
+        }: FooProps) => {
+
+        }
+      `
+    }
   ],
 });
