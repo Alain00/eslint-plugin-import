@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.1](https://github.com/Alain00/eslint-plugin-import/compare/v1.3.0...v1.3.1) (2022-09-02)
+
+
+### Bug Fixes
+
+* **sort-params:** detect func that begin with `on` ([b7ecc1c](https://github.com/Alain00/eslint-plugin-import/commit/b7ecc1c7364c8c944a94bf5669b233a0ca027e2a))
+
 ## [1.3.0](https://github.com/Alain00/eslint-plugin-import/compare/v1.2.1...v1.3.0) (2022-08-31)
 
 
